@@ -194,7 +194,7 @@ if(pk){
       var j=x.j,p=j.pay;if(j.redirect){btn.textContent="Presmerúvam na platbu…";ge("purchase",K.map(function(x){return gi(x.id,x.q)}),{transaction_id:String(j.num),shipping:(j.ship&&j.ship.price)||0});K=[];uloz(KK,K);location.href=j.redirect;return}krok=4;
       pk.innerHTML='<div class="hotovo"><div class="ok"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></div>'+
         '<h1>Ďakujeme, objednávka č. '+esc(j.num)+' je prijatá</h1>'+(j.test?'<p><b>Skúšobná prevádzka:</b> objednávka nebude vybavená, nič neplaťte.'+(gtxt?' Kniha zdarma v objednávke: '+esc(gtxt)+'.':'')+'</p>':'')+
-        '<p>Potvrdenie sme poslali na '+esc(String(fd.get("email")))+'.</p>'+
+        (j.test?'':'<p>Potvrdenie sme poslali na '+esc(String(fd.get("email")))+'.</p>')+
         (p?(function(){var mob=window.matchMedia&&matchMedia("(max-width:820px)").matches;
           function rr(l,v,id){return '<div style="display:flex;align-items:center;justify-content:space-between;gap:10px;padding:10px 0;border-bottom:1px solid rgba(0,0,0,.1)"><div style="text-align:left"><div style="font-size:12px;opacity:.7">'+l+'</div><div style="font-size:17px;font-weight:600;word-break:break-all">'+esc(v)+'</div></div><button type="button" class="bt kop" data-k="'+esc(id)+'" style="padding:8px 14px;font-size:14px">Kopírovať</button></div>'}
           var sm=String(p.amount).replace(".",",");
