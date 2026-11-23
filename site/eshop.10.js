@@ -47,6 +47,7 @@ function darSekcia(){if(!DC.ids||!DC.ids.length||!K.length)return "";var n=narok
   if(m<n){h+='<p>Vyberte si '+(n-m===1?'knihu':'ďalšiu knihu')+' zdarma:</p><div class="dar-m">'+DC.ids.map(function(id){var p=P[id];return '<button type="button" class="dar-k" data-dpridaj="'+id+'"><img src="'+esc(foto(p.f[0]))+'" alt="" loading="lazy"><span>'+esc(p.n)+'</span><i>Pridať zdarma</i></button>'}).join("")+'</div>'}
   else h+='<p>Ďalšia kniha zdarma bude po nákupe ešte za '+eur(zost)+'.</p>';
   return h+'</div>'}
+orez();
 function ulozK(){orez();uloz(KK,K);uloz(KD,D);kresli()}
 function spolu(){return K.reduce(function(s,x){return s+P[x.id].c*x.q},0)}
 function kusov(){return K.reduce(function(s,x){return s+x.q},0)+dpoc()}
