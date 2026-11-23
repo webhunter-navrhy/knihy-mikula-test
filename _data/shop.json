@@ -1,0 +1,72 @@
+{
+ "bank": {
+  "iban": "SK2111000000002628832434",
+  "name": "MIKULA s.r.o."
+ },
+ "shipping": [
+  {
+   "id": "paketa",
+   "name": "Paketa",
+   "note": "",
+   "price": 3.5,
+   "tiers": [
+    {
+     "max": 2,
+     "price": 3.5
+    },
+    {
+     "max": 5,
+     "price": 3.9
+    },
+    {
+     "max": 10,
+     "price": 4.9
+    },
+    {
+     "max": 50,
+     "price": 5.0
+    }
+   ],
+   "free_from": 50,
+   "address": true,
+   "active": true
+  },
+  {
+   "id": "posta",
+   "name": "Slovenská pošta – balík",
+   "note": "",
+   "price": 5,
+   "tiers": [
+    {
+     "max": 2,
+     "price": 5
+    },
+    {
+     "max": 10,
+     "price": 6
+    }
+   ],
+   "free_from": 50,
+   "address": true,
+   "active": true
+  },
+  {
+   "id": "kurier",
+   "name": "Expresný kuriér",
+   "note": "",
+   "price": 9,
+   "free_from": 50,
+   "address": true,
+   "active": true
+  },
+  {
+   "id": "osobne",
+   "name": "Osobný odber",
+   "note": "Nám. Hraničiarov 35, Bratislava. Vyzdvihnutie objednávky: Po, St, Pi 14:00–17:00 h",
+   "price": 0,
+   "address": false,
+   "active": true
+  }
+ ],
+ "default_weight": 0.3
+}
