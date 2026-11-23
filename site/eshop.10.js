@@ -256,4 +256,4 @@ setTimeout(otvor,2000);
 })();
 
 /* skúšobná verzia: banner */
-if(E.test){var tb=document.createElement("div");tb.className="test-b";tb.textContent="SKÚŠOBNÁ VERZIA – objednávky sa neodosielajú, nič neplaťte";document.body.insertBefore(tb,document.body.firstChild)}
+if(window.ESHOP&&window.ESHOP.test){var tb=document.createElement("div");tb.className="test-b";tb.textContent="SKÚŠOBNÁ VERZIA – objednávky sa neodosielajú, nič neplaťte";document.body.insertBefore(tb,document.body.firstChild)}
